@@ -1,0 +1,38 @@
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: "{{ .Values.name }}"
+spec:
+  selector:
+    matchLabels:
+      app: "{{ .Values.name }}"
+  serviceName: "{{ .Values.name }}"
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: "{{ .Values.name }}"
+    spec:
+      terminationGracePeriodSeconds: 10
+      containers:
+      - name: "{{ .Values.name }}"
+        image: {{ .Values.statefulset.image }}
+        ports:
+        - containerPort: 80
+          name: "{{ .Values.name }}"
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: "{{ .Values.name }}"
+  labels:
+    app: "{{ .Values.name }}"
+spec:
+  ports:
+  - port: 80
+    name: "{{ .Values.name }}"
+  clusterIP: None
+  selector:
+    app: "{{ .Values.name }}"
