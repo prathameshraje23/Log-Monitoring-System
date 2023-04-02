@@ -1,24 +1,24 @@
 # Log-Monitoring-System
 
-Start monitoring logs in kubernetes by following below steps:
+##Start monitoring logs in kubernetes by following below steps:
 
 Helm charts for java application, fluentd and elastic-kibana are hosted publically using GitHub pages
 
-*Add helm repo*
+Add helm repo
 ->
-helm repo add repo-name https://prathameshraje23.github.io/Log-Monitoring-System/helm/charts
+### helm repo add repo-name https://prathameshraje23.github.io/Log-Monitoring-System/helm/charts
 
 Install helm charts
 ->
 
 For Java Application
 ->
-helm install chart-name repo-name/java-app
+### helm install chart-name repo-name/java-app
 
 For fluentd log collector
 ->
-helm install chart-name repo-name/fluentd
+### helm install chart-name repo-name/fluentd
 
 For elastic and kibana
 ->
-helm install chart-name repo-name/ek
+### helm install chart-name repo-name/ek
