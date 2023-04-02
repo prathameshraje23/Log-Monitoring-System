@@ -1,6 +1,6 @@
 # Log-Monitoring-System
 
-##Start monitoring logs in kubernetes by following below steps:
+## Start monitoring logs in kubernetes by following below steps:
 
 Helm charts for java application, fluentd and elastic-kibana are hosted publically using GitHub pages
 
