@@ -1,0 +1,36 @@
+apiVersion: v1
+entries:
+  ek:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-04-02T16:19:28.710191651+05:30"
+    description: A Helm chart for Kubernetes
+    digest: f454aa8fcb4e9ab5a2a08ad3ba755922df7bbc766601b355c4374c3f4247e6ae
+    name: ek
+    type: application
+    urls:
+    - ek-0.1.0.tgz
+    version: 0.1.0
+  fluentd:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-04-02T16:19:28.710322868+05:30"
+    description: A Helm chart for Kubernetes
+    digest: 6117422c6711a376cc265fd506aa29eae4682705c651d75ca40e85e6108dca2c
+    name: fluentd
+    type: application
+    urls:
+    - fluentd-0.1.0.tgz
+    version: 0.1.0
+  java-app:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-04-02T16:19:28.710461333+05:30"
+    description: A Helm chart for Kubernetes
+    digest: e216b073ecee2867e38138d4c72045a46214cd8bcd7c02f8bf521510844382b7
+    name: java-app
+    type: application
+    urls:
+    - java-app-0.1.0.tgz
+    version: 0.1.0
+generated: "2023-04-02T16:19:28.709965714+05:30"
